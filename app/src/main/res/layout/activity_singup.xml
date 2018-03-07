@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contarant_main_login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+         />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/gps_logo_white" />
+
+
+    <TextView
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:id="@+id/tag_line"
+        android:textColor="#fff"
+        android:text="Rated #1 Global Tracking Platform"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:background="#0099f1"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_form_user_input"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp" />
+
+                <EditText
+                    android:background="@drawable/edittext_drawable"
+                    android:id="@+id/et_username"
+                    android:textColorHint="#fff"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Username"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/password_linear"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:background="#0099f1"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_form_user_password"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp" />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/et_password"
+                    android:background="@drawable/edittext_drawable"
+                    android:textColorHint="#fff"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_marginTop="8dp"
+                android:id="@+id/remember_checkbox"
+                android:textColor="#fff"
+                android:text="Remember Me"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:background="#0099f1"
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="lato"
+                android:textSize="18sp"
+                android:text="Sign In"
+                android:textColor="#fff"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="lato"
+                android:textSize="17sp"
+                android:text="Forgot your password?"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/help_image"
+                android:padding="4dp"
+                android:src="@drawable/help_icon_png"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/help_text"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginLeft="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/help_image"
+                android:text="Help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign_up"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/singup_image"
+                android:padding="4dp"
+                android:src="@drawable/sign_up_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/sign_up_text"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginLeft="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/singup_image"
+                android:text="Sign Up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/progress_background"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="#99ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

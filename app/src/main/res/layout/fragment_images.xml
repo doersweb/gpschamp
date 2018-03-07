@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="track.gpschamp.com.gpschamp.ui.fragments.command.CommandFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/obj_rel"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/grey_border_drawable"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/object_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="Object Name" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_arrow_drop_down" />
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/filter_rel"-->
+        <!--android:layout_below="@+id/obj_rel"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:background="@drawable/grey_border_drawable"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginLeft="32dp"-->
+        <!--android:layout_marginRight="32dp"-->
+
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:id="@+id/filter_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:paddingTop="6dp"-->
+            <!--android:paddingBottom="6dp"-->
+
+            <!--android:text="Filter" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="8dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:src="@drawable/ic_arrow_drop_down" />-->
+
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_below="@+id/obj_rel"
+        android:id="@+id/type_rel"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/grey_border_drawable"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/start_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+
+            android:text="Start Date" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:layout_centerVertical="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_calendar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/type_rel"
+        android:id="@+id/command_rel"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/grey_border_drawable"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/end_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+
+            android:text="End Date" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:layout_centerVertical="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+
+            android:src="@drawable/ic_calendar" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/command_rel"
+        android:background="@color/colorPrimary"
+        android:id="@+id/show_images"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:text="Show Images"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/progress_background"
+        android:clickable="true"
+        android:background="#99ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

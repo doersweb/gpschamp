@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="track.gpschamp.com.gpschamp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="track.GpsChamp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+
+            android:name=".ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.SingupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SingleObjectActivity"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD3MJYqvn76kuj0wvZdepXX2OqH5qbyzd8" />
+
+        <activity
+            android:name=".ui.activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.PlayBackFormAcitivity"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.PlaybackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.EventMapActivity"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_gps_champ" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name=".fcm.GpsChampFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.GpsChampFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.activities.ImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activities.NotifcationActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="track.gpschamp.com.gpschamp.ui.activities.EventMapActivity">
+
+    <include layout="@layout/app_bar_rest"
+        android:id="@+id/app_bar"/>
+
+    <fragment
+        android:layout_above="@+id/botton_layout"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".ui.activities.SingleObjectActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    <RelativeLayout
+        android:id="@+id/progress_background"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="#99ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

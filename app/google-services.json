@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "1066555499276",
+    "firebase_url": "https://gpschamp-69de6.firebaseio.com",
+    "project_id": "gpschamp-69de6",
+    "storage_bucket": "gpschamp-69de6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066555499276:android:25959d86b32ef222",
+        "android_client_info": {
+          "package_name": "com.track.gps.gpscham"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066555499276-r455fnfi6l3vdhg2ia499aj34fgg1pfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJQTvm6AkBGhbQTI1pC7PUXKJZWiAjqUI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066555499276:android:587c260390c57ad4",
+        "android_client_info": {
+          "package_name": "track.gpschamp.com.gpschamp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066555499276-4hcc0kgc1tobg9tscmhcgo9cpqfmste4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "track.gpschamp.com.gpschamp",
+            "certificate_hash": "4bb339d19faf373484cabbdb99dd34a78ef49b3a"
+          }
+        },
+        {
+          "client_id": "1066555499276-r455fnfi6l3vdhg2ia499aj34fgg1pfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJQTvm6AkBGhbQTI1pC7PUXKJZWiAjqUI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066555499276-r455fnfi6l3vdhg2ia499aj34fgg1pfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

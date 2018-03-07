@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="track.gpschamp.com.gpschamp.ui.fragments.events.EventsFragment">
+
+
+
+    <ListView
+        android:divider="@null"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/heading_layout"
+        android:id="@+id/event_list_view"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="track.gpschamp.com.gpschamp.ui.fragments.object.RunningFragment">
+
+
+    <EditText
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:layout_margin="4dp"
+        android:hint="Search"
+        android:gravity="center"
+        android:background="@drawable/grey_border_drawable"
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:layout_below="@+id/search"
+        android:layout_marginTop="2dp"
+        android:divider="@null"
+        android:id="@+id/object_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/fallback"
+        android:text="No objects to show"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

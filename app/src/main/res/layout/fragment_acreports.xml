@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="track.gpschamp.com.gpschamp.ui.fragments.reports.Reports">
+
+    <RelativeLayout
+        android:background="@drawable/grey_border_drawable"
+        android:padding="6dp"
+        android:id="@+id/history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/history"
+            android:textSize="17sp"
+            android:text="History"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_block"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/grey_border_drawable"
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/history_layout"
+        android:id="@+id/playback_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/playback"
+            android:textSize="17sp"
+            android:text="Playback"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_keyboard_arrow_right"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/grey_border_drawable"
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/playback_layout"
+        android:id="@+id/ac_report_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ac"
+            android:textSize="17sp"
+            android:text="AC Report"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_block"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/grey_border_drawable"
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/ac_report_layout"
+        android:id="@+id/fuel_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/fuel"
+            android:textSize="17sp"
+            android:text="Fuel Report"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_block"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/grey_border_drawable"
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/fuel_report"
+        android:id="@+id/driver_behaviour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/driver"
+            android:textSize="17sp"
+            android:text="Driver Behaviour"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_block"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/grey_border_drawable"
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/driver_behaviour"
+        android:id="@+id/graphics_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/graph"
+            android:textSize="17sp"
+            android:text="Graph"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_block"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

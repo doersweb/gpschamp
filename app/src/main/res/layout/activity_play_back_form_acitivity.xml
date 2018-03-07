@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_gradient"
+    tools:context="track.gpschamp.com.gpschamp.ui.activities.PlayBackFormAcitivity">
+
+    <include layout="@layout/app_bar_rest"
+        android:id="@+id/app_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/object"
+            android:background="@drawable/grey_border_drawable"
+            android:padding="10dp"
+            android:text="Select Object"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/start_date_view"
+                android:background="@drawable/grey_border_drawable"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:clickable="false"
+                    android:editable="false"
+                    android:background="#01ffffff"
+                    android:id="@+id/start_date"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Start Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/grey_border_drawable"
+                android:id="@+id/start_time_view"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:clickable="false"
+                    android:editable="false"
+                    android:background="#01ffffff"
+                    android:id="@+id/start_time"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Start Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/end_date_view"
+                android:background="@drawable/grey_border_drawable"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:clickable="false"
+                    android:editable="false"
+                    android:background="#01ffffff"
+                    android:id="@+id/end_date"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:hint="End Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:padding="2dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/grey_border_drawable"
+                android:id="@+id/end_time_view"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:clickable="false"
+                    android:editable="false"
+                    android:background="#01ffffff"
+                    android:id="@+id/end_time"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:hint="End Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/stop_duration"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/grey_border_drawable"
+            android:padding="10dp"
+            android:text="Stop Duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:textSize="16sp"
+                android:background="@drawable/grey_border_drawable"
+                android:layout_weight="1"
+                android:text="Stops"
+                android:id="@+id/stops"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:textSize="16sp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/grey_border_drawable"
+                android:id="@+id/events"
+                android:text="Events"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="SUBMIT"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/progress_background"
+        android:clickable="true"
+        android:background="#99ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
